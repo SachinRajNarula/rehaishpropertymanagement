@@ -1,77 +1,785 @@
----
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css';
----
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <BaseHead title="Goglab Property Management" description="Effortless Property Management Solutions" />
-  </head>
-  <body>
-    <Header />
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v24.9 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Rehaish Property Management | London, Ontario</title>
+	<meta name="description" content="Rehaish Property Management is London Ontario&#039;s premier residential property management company. Contact us for property management in London ON." />
+	<link rel="canonical" href="https://jdnpropertys.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Rehaish Property Management | London, Ontario" />
+	<meta property="og:description" content="Rehaish Property Management is London Ontario&#039;s premier residential property management company. Contact us for property management in London ON." />
+	<meta property="og:url" content="https://REHAISH.CA/" />
+	<meta property="og:site_name" content="Rehaish Property Management" />
+	<meta property="article:modified_time" content="2025-04-10T18:21:53+00:00" />
+	
+	<meta property="og:image:width" content="1600" />
+	<meta property="og:image:height" content="878" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<!-- / Yoast SEO plugin. -->
 
-    <main>
-      <!-- HERO SECTION -->
-      <section style="background: url('/assets/hero-bg.jpg') center/cover no-repeat;" class="text-white py-32 text-center">
-        <div class="container">
-          <h1 class="text-5xl font-bold mb-4">Stress-Free Property Management</h1>
-          <p class="text-xl mb-8">We handle everything so you don’t have to.</p>
-          <a href="/contact" class="btn">Get Started</a>
-        </div>
-      </section>
 
-      <!-- SERVICES SECTION -->
-      <section class="py-20 bg-white">
-        <div class="container">
-          <h2 class="section-title">Our Services</h2>
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="card">
-              <img src="/assets/tenant-placement.png" alt="Tenant Placement" class="mb-4" />
-              <h3 class="text-xl font-semibold mb-2">Tenant Placement</h3>
-              <p>High-quality tenant screening and leasing made simple.</p>
-            </div>
-            <div class="card">
-              <img src="/assets/rent-collection.png" alt="Rent Collection" class="mb-4" />
-              <h3 class="text-xl font-semibold mb-2">Rent Collection</h3>
-              <p>On-time and reliable rent payments, every month.</p>
-            </div>
-            <div class="card">
-              <img src="/assets/maintenance.png" alt="Maintenance" class="mb-4" />
-              <h3 class="text-xl font-semibold mb-2">24/7 Maintenance</h3>
-              <p>We handle emergency repairs and regular maintenance.</p>
-            </div>
-            <div class="card">
-              <img src="/assets/reporting.png" alt="Financial Reporting" class="mb-4" />
-              <h3 class="text-xl font-semibold mb-2">Financial Reporting</h3>
-              <p>Easy-to-understand financials for peace of mind.</p>
-            </div>
-            <div class="card">
-              <img src="/assets/compliance.png" alt="Legal Compliance" class="mb-4" />
-              <h3 class="text-xl font-semibold mb-2">Legal Compliance</h3>
-              <p>We stay on top of local laws and regulations for you.</p>
-            </div>
-            <div class="card">
-              <img src="/assets/marketing.png" alt="Property Marketing" class="mb-4" />
-              <h3 class="text-xl font-semibold mb-2">Property Marketing</h3>
-              <p>Vacancy-filling listings that get your property rented fast.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+<link rel="alternate" type="application/rss+xml" title="Rehaish Property Management &raquo; Feed" href="https://jdnpropertys.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Rehaish Property Management &raquo; Comments Feed" href="https://jdnpropertys.com/comments/feed/" />
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-optimized="1" rel='stylesheet' id='wpo_min-header-0-css' href='https://jdnpropertys.com/wp-content/litespeed/css/1a0d8c3a567f1a67f5bd7f278d72913a.css?ver=2913a' media='all' />
+<script data-optimized="1" src="https://jdnpropertys.com/wp-content/litespeed/js/7905f28b0de5ab6b71f2105499fc6c61.js?ver=c6c61" id="wpo_min-header-0-js"></script>
+<link rel="https://api.w.org/" href="https://jdnpropertys.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://jdnpropertys.com/wp-json/wp/v2/pages/9" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://jdnpropertys.com/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://jdnpropertys.com/' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://jdnpropertys.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjdnpropertys.com%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://jdnpropertys.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjdnpropertys.com%2F&#038;format=xml" />
+<meta name="generator" content="Elementor 3.28.3; features: additional_custom_breakpoints, e_local_google_fonts, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5PGBJK6D');</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript" src="//cdn.rlets.com/capture_configs/98e/5c5/9f6/e52449888540e58744c19be.js" async="async"></script>
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://jdnpropertys.com/wp-content/uploads/2023/04/cropped-jdnfavicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://jdnpropertys.com/wp-content/uploads/2023/04/cropped-jdnfavicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://jdnpropertys.com/wp-content/uploads/2023/04/cropped-jdnfavicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://jdnpropertys.com/wp-content/uploads/2023/04/cropped-jdnfavicon-270x270.png" />
+		<style id="wp-custom-css">
+			
 
-      <!-- CTA SECTION -->
-      <section style="background: url('/assets/contact-bg.jpg') center/cover no-repeat;" class="text-white py-20 text-center">
-        <div class="container">
-          <h2 class="text-3xl font-bold mb-4">Let’s Manage Your Property The Smart Way</h2>
-          <p class="mb-6">Get in touch with us today and see how we can make your life easier.</p>
-          <a href="/contact" class="btn">Contact Us</a>
-        </div>
-      </section>
-    </main>
+/** Start Block Kit CSS: 136-3-fc37602abad173a9d9d95d89bbe6bb80 **/
 
-    <Footer />
-  </body>
+.envato-block__preview{overflow: visible !important;}
+
+/** End Block Kit CSS: 136-3-fc37602abad173a9d9d95d89bbe6bb80 **/
+		</style>
+		</head>
+<body class="home wp-singular page-template page-template-elementor_header_footer page page-id-9 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor theme-default elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-9">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe data-lazyloaded="1" src="about:blank" data-src="https://www.googletagmanager.com/ns.html?id=GTM-5PGBJK6D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PGBJK6D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<div data-elementor-type="header" data-elementor-id="105" class="elementor elementor-105 elementor-location-header" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-1259fe6 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="1259fe6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-082f73a" data-id="082f73a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e59d249 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="e59d249" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+											<a href="https://jdnpropertys.com">
+			<img data-lazyloaded="1" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" width="300" height="120" data-src="https://jdnpropertys.com/wp-content/uploads/2023/03/JDN-Logo-300x120.jpeg" class="attachment-medium size-medium wp-image-360" alt="JDN Logo" data-srcset="https://jdnpropertys.com/wp-content/uploads/2023/03/JDN-Logo-300x120.jpeg 300w, https://jdnpropertys.com/wp-content/uploads/2023/03/JDN-Logo-1024x411.jpeg 1024w, https://jdnpropertys.com/wp-content/uploads/2023/03/JDN-Logo-768x308.jpeg 768w, https://jdnpropertys.com/wp-content/uploads/2023/03/JDN-Logo-1536x616.jpeg 1536w, https://jdnpropertys.com/wp-content/uploads/2023/03/JDN-Logo.jpeg 2048w" data-sizes="(max-width: 300px) 100vw, 300px" /><noscript><img width="300" height="120" src="https://jdnpropertys.com/wp-content/uploads/2023/03/JDN-Logo-300x120.jpeg" class="attachment-medium size-medium wp-image-360" alt="JDN Logo" srcset="https://jdnpropertys.com/wp-content/uploads/2023/03/JDN-Logo-300x120.jpeg 300w, https://jdnpropertys.com/wp-content/uploads/2023/03/JDN-Logo-1024x411.jpeg 1024w, https://jdnpropertys.com/wp-content/uploads/2023/03/JDN-Logo-768x308.jpeg 768w, https://jdnpropertys.com/wp-content/uploads/2023/03/JDN-Logo-1536x616.jpeg 1536w, https://jdnpropertys.com/wp-content/uploads/2023/03/JDN-Logo.jpeg 2048w" sizes="(max-width: 300px) 100vw, 300px" /></noscript>				</a>
+											</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-112269d" data-id="112269d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-55b08dc elementor-nav-menu__align-end elementor-nav-menu--dropdown-mobile elementor-nav-menu--stretch elementor-nav-menu__text-align-center elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="55b08dc" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+				<ul id="menu-1-55b08dc" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1282"><a href="https://jdnpropertys.com/about/" class="elementor-item">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1309"><a href="https://jdnpropertys.com/rental-search/" class="elementor-item">Rental Search</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1297"><a href="#" class="elementor-item elementor-item-anchor">Tenants</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1299"><a href="https://jdnpropertys.com/tenants/" class="elementor-sub-item">Tenant Login Portal</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1301"><a href="https://jdnpropertys.com/repair-request/" class="elementor-sub-item">Repair Request</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1302"><a href="https://jdnpropertys.com/rental-search/" class="elementor-sub-item">Rental Search</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1303"><a href="https://jdnpropertys.com/application-process/" class="elementor-sub-item">Application Process</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1304"><a href="https://jdnpropertys.com/move-in-move-out-checklist/" class="elementor-sub-item">Move-in/Move-out Checklist</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1623"><a href="https://jdnpropertys.com/smoke-detectors/" class="elementor-sub-item">Smoke Detector Manuals</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1542"><a href="https://jdnpropertys.com/tenant-articles/" class="elementor-sub-item">Articles</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1305"><a href="https://jdnpropertys.com/faq/" class="elementor-sub-item">FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1298"><a href="#" class="elementor-item elementor-item-anchor">Owners</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1300"><a href="https://jdnpropertys.com/owners/" class="elementor-sub-item">Owner Login Portal</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1306"><a href="https://jdnpropertys.com/service-areas/" class="elementor-sub-item">Service Areas</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1693"><a href="https://jdnpropertys.com/booking/" class="elementor-sub-item">Book a 1-on-1 With Us</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1284"><a href="https://jdnpropertys.com/pricing/" class="elementor-sub-item">Pricing</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1541"><a href="https://jdnpropertys.com/landlord-articles/" class="elementor-sub-item">Articles</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1494"><a href="https://jdnpropertys.com/faq-for-landlords/" class="elementor-sub-item">FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1283"><a href="https://jdnpropertys.com/contact/" class="elementor-item">Contact</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-55b08dc" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1282"><a href="https://jdnpropertys.com/about/" class="elementor-item" tabindex="-1">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1309"><a href="https://jdnpropertys.com/rental-search/" class="elementor-item" tabindex="-1">Rental Search</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1297"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Tenants</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1299"><a href="https://jdnpropertys.com/tenants/" class="elementor-sub-item" tabindex="-1">Tenant Login Portal</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1301"><a href="https://jdnpropertys.com/repair-request/" class="elementor-sub-item" tabindex="-1">Repair Request</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1302"><a href="https://jdnpropertys.com/rental-search/" class="elementor-sub-item" tabindex="-1">Rental Search</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1303"><a href="https://jdnpropertys.com/application-process/" class="elementor-sub-item" tabindex="-1">Application Process</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1304"><a href="https://jdnpropertys.com/move-in-move-out-checklist/" class="elementor-sub-item" tabindex="-1">Move-in/Move-out Checklist</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1623"><a href="https://jdnpropertys.com/smoke-detectors/" class="elementor-sub-item" tabindex="-1">Smoke Detector Manuals</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1542"><a href="https://jdnpropertys.com/tenant-articles/" class="elementor-sub-item" tabindex="-1">Articles</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1305"><a href="https://jdnpropertys.com/faq/" class="elementor-sub-item" tabindex="-1">FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1298"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Owners</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1300"><a href="https://jdnpropertys.com/owners/" class="elementor-sub-item" tabindex="-1">Owner Login Portal</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1306"><a href="https://jdnpropertys.com/service-areas/" class="elementor-sub-item" tabindex="-1">Service Areas</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1693"><a href="https://jdnpropertys.com/booking/" class="elementor-sub-item" tabindex="-1">Book a 1-on-1 With Us</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1284"><a href="https://jdnpropertys.com/pricing/" class="elementor-sub-item" tabindex="-1">Pricing</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1541"><a href="https://jdnpropertys.com/landlord-articles/" class="elementor-sub-item" tabindex="-1">Articles</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1494"><a href="https://jdnpropertys.com/faq-for-landlords/" class="elementor-sub-item" tabindex="-1">FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1283"><a href="https://jdnpropertys.com/contact/" class="elementor-item" tabindex="-1">Contact</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				<div data-elementor-type="wp-page" data-elementor-id="9" class="elementor elementor-9" data-elementor-post-type="page">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-8897959 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8897959" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9e30018" data-id="9e30018" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-24ab846 elementor-widget elementor-widget-heading" data-id="24ab846" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">Residential Property Management in London ON and the surrounding area</h1>				</div>
+				</div>
+				<div class="elementor-element elementor-element-9dda4e4 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="9dda4e4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Specializing multi-unit buildings, apartment buildings, commercial &amp; residential properties, and student rentals.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-53887fd elementor-position-left elementor-vertical-align-middle elementor-mobile-position-left elementor-view-default elementor-widget elementor-widget-icon-box" data-id="53887fd" data-element_type="widget" data-widget_type="icon-box.default">
+				
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-76b54f7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="76b54f7" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7a4472b" data-id="7a4472b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-72cf16f elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="72cf16f" data-element_type="widget" data-widget_type="button.default">
+				
+				</div>
+				<div class="elementor-element elementor-element-fd73f9e elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="fd73f9e" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm"">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">GET STARTED</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e864dec" data-id="e864dec" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0e38de1 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="0e38de1" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3cfde02" data-id="3cfde02" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9ab26ab elementor-widget elementor-widget-global elementor-global-1451 elementor-widget-heading" data-id="9ab26ab" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Transparency, Accountability, Results</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4cc3e30 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="4cc3e30" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5f37d68" data-id="5f37d68" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d30ae6c elementor-widget elementor-widget-heading" data-id="d30ae6c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Discover Our Services</h2>				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-d9eea49 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d9eea49" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-295005e" data-id="295005e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<a class="eael-wrapper-link-ad37f27 --eael-wrapper-link-tag" href="/articles/property-marketing/"></a>		<div data-eael-wrapper-link="eael-wrapper-link-ad37f27" class="elementor-element elementor-element-ad37f27 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="ad37f27" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-home"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Property Marketing						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						We never want your rental to sit vacant, which is why we begin the marketing process immediately! We monitor reporting from listing sights regularly to ensure your listing gets maximum exposure.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-91a25fe" data-id="91a25fe" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<a class="eael-wrapper-link-ee95d9d --eael-wrapper-link-tag" href="/articles/tenant-background-checks/"></a>		<div data-eael-wrapper-link="eael-wrapper-link-ee95d9d" class="elementor-element elementor-element-ee95d9d elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="ee95d9d" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-users"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Tenant Screening						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Finding the right tenant is our top concern.  We protect your investment by carefully screening applicants through a variety of tools and selecting the best qualified tenants.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a303d9d" data-id="a303d9d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<a class="eael-wrapper-link-655ad97 --eael-wrapper-link-tag" href="/articles/managing-rent-collections/"></a>		<div data-eael-wrapper-link="eael-wrapper-link-655ad97" class="elementor-element elementor-element-655ad97 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="655ad97" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-dollar-sign"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Rent Collection						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Getting paid is easy. We collect the rent, pay expenses, and deposit the profits directly into your bank account every month, on time.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-d49fa41 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d49fa41" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-70343f8" data-id="70343f8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<a class="eael-wrapper-link-0651a74 --eael-wrapper-link-tag" href="/articles/property-maintenance/"></a>		<div data-eael-wrapper-link="eael-wrapper-link-0651a74" class="elementor-element elementor-element-0651a74 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="0651a74" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-wrench"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Maintenance						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						We've built a network of trusted contractors and tradespeople who help us resolve maintenance issues promptly.  We're also on call 24/7 for emergencies and ready to jump into action.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-602fe82" data-id="602fe82" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-aebaf79 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="aebaf79" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-check"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Property Inspections						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Every property we manage receives periodic inspections and a detailed report. We identify issues before they escalate and offer maintenance suggestions in order to keep your investment in the best shape possible.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-599ad12" data-id="599ad12" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<a class="eael-wrapper-link-54056b4 --eael-wrapper-link-tag" href="/articles/rental-financial-reporting/"></a>		<div data-eael-wrapper-link="eael-wrapper-link-54056b4" class="elementor-element elementor-element-54056b4 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="54056b4" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-bolt"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Financial Reporting						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						You’ll be provided with a clear picture of the financial health of your investment, available through your secure online Owner Portal. Sign in at any time to view statements, vendor invoices, and more.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-94c5d8a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="94c5d8a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-ec3d3c0" data-id="ec3d3c0" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-1de6f1f" data-id="1de6f1f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<a class="eael-wrapper-link-3c511a0 --eael-wrapper-link-tag" href="/articles/evictions/"></a>		<div data-eael-wrapper-link="eael-wrapper-link-3c511a0" class="elementor-element elementor-element-3c511a0 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="3c511a0" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-gavel"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Evictions						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						While our tenant screening process helps us avoid most eviction scenarios. Should an unexpected situation ever arise however, we'll manage and oversee the legal eviction. With an in-house paralegal at our disposal, that process is streamlined and less costly.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-ed4079d" data-id="ed4079d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<a class="eael-wrapper-link-9452b12 --eael-wrapper-link-tag" href="/articles/legal-guidance-for-landlords/"></a>		<div data-eael-wrapper-link="eael-wrapper-link-9452b12" class="elementor-element elementor-element-9452b12 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="9452b12" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-balance-scale"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Legal Guidance						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						With our in-house paralegal, we are able to address any questions or concerns that may arise related to any potential LTB issues.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-1c0ab8c" data-id="1c0ab8c" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e4c6a29 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="e4c6a29" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-db2ec5f" data-id="db2ec5f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-ecf5dd3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ecf5dd3" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-702694f" data-id="702694f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8a6f06e elementor-widget elementor-widget-heading" data-id="8a6f06e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Why Choose Rehaish Property Management?</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-731909d elementor-widget elementor-widget-heading" data-id="731909d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Learn What Sets Us Apart</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a0121c8" data-id="a0121c8" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-fc439bf elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="fc439bf" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">01. We are your partner<br></h3><p class="elementor-image-box-description">Our success is founded in your success.  We can't succeed unless you do and so our focus is on your success.  Our business model is compact and efficient to keep costs down while still being able to provide the best level of service possible.</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-4a38aab elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="4a38aab" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">02. We are Dedicated Property Managers</h3><p class="elementor-image-box-description">Property Management is all we do.  It's our sole focus.  We seasoned staff are the most knowledgeable and skilled in the industry.  With two decades of experience, Rehaish, trust that you and your investment will receive the best professional care available.</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-a3bedc5 elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="a3bedc5" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">03. We Set the Bar High for Customer Service</h3><p class="elementor-image-box-description">Our staff are friendly and professional.  We pay particular attention to detail and respond quickly to your questions to help ensure a worry free experience.</p></div></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-df3071e elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="df3071e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-596924e" data-id="596924e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d19daca elementor-widget elementor-widget-heading" data-id="d19daca" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Tell Us About Your Property</h2>				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-4a53c18 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4a53c18" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-89be182" data-id="89be182" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-653f534 elementor-widget__width-initial elementor-widget elementor-widget-sina_dynamic_button" data-id="653f534" data-element_type="widget" data-widget_type="sina_dynamic_button.default">
+				<div class="elementor-widget-container">
+							<div class="sina-dynamic-button">
+			<a  class="sina-dynamic-btn   " href="https://jdnpropertys.com/investor-onboarding/"
+									id="conta"
+												>
+							Fill Out Our Form					</a>
+		</div><!-- .sina-dynamic-button -->
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b30188b" data-id="b30188b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4151ef2 elementor-widget elementor-widget-text-editor" data-id="4151ef2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="background-color: var( --e-global-color-be10bdb );">or call </span><a href="tel:+1-519-951-7226">(519) 951-7226</a></p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-54db234 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="54db234" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check"></i>						</span>
+										<span class="elementor-icon-list-text">Discover the Rehaish advantage today</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check"></i>						</span>
+										<span class="elementor-icon-list-text">Maximize your investment property’s potential</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check"></i>						</span>
+										<span class="elementor-icon-list-text">Save time and gain peace of mind</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0e87ec3" data-id="0e87ec3" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;background_motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d9461d0 elementor-align-center elementor-widget elementor-widget-button" data-id="d9461d0" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="https://jdnpropertys.com/investor-onboarding/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Start a Conversation</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-fe73bce elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fe73bce" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-e013148" data-id="e013148" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-bced074 elementor-widget elementor-widget-heading" data-id="bced074" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Your Perfect Partner in Residential Property Management​ for London and the surrounding area</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-8c90cba elementor-widget elementor-widget-text-editor" data-id="8c90cba" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<h5 class="fl-heading"><span class="fl-heading-text">When it comes to rentals in London and the surrounding area, no team does it better.</span></h5>								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-fe6a659" data-id="fe6a659" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3173f0c elementor-widget elementor-widget-text-editor" data-id="3173f0c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>If you own rentals in London, St. Thomas, or the surrounding area, it&#8217;s essential to employ the right property management strategy for your investment. It&#8217;s important to have a proven approach to ensure procedures are in place to stay on top of it all and ensure a healthy return on investment.  Many property owners choose to partner with a professional property manager who can handle the day-to-day needs of the property and the tenants and take on the hard work of being a landlord.</p>								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1b41684" data-id="1b41684" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-78cc90e elementor-widget elementor-widget-text-editor" data-id="78cc90e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>At Rehaish Property Management, our goal is to take the stress and work of that day-to-day management from you.  We consistently strive towards exceeding expectations.   Whether you own one rental property or a large portfolio, we have the resources and expertise you need to get great results. Learn more about our property management packages; call us for a free consultation.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dcbb4c5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dcbb4c5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-83e12f5" data-id="83e12f5" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9540774 elementor-widget elementor-widget-heading" data-id="9540774" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Share Your Rental Property Needs with Us</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-72f01cd elementor-widget elementor-widget-text-editor" data-id="72f01cd" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<h5 class="fl-heading"><span class="fl-heading-text">When it comes to rentals in London and the surrounding area, no team does it better.</span></h5>								</div>
+				</div>
+				<div class="elementor-element elementor-element-db0f10d elementor-align-center elementor-widget elementor-widget-button" data-id="db0f10d" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#contact-owners2">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">CONTACT US</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				<div data-elementor-type="footer" data-elementor-id="134" class="elementor elementor-134 elementor-location-footer" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-fad18e7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fad18e7" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-479600f" data-id="479600f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f3747f0 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="f3747f0" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://lpma.ca/directory/jdn-property-management-inc/">
+							<img data-lazyloaded="1" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="https://jdnpropertys.com/wp-content/uploads/elementor/thumbs/LPMA-Logo-qta2nsytc9yeflomwj64tb7qljm7mq1adgtr81ehr4.png" title="LPMA Logo" alt="Logo for London Property Management Association" loading="lazy" /><noscript><img src="https://jdnpropertys.com/wp-content/uploads/elementor/thumbs/LPMA-Logo-qta2nsytc9yeflomwj64tb7qljm7mq1adgtr81ehr4.png" title="LPMA Logo" alt="Logo for London Property Management Association" loading="lazy" /></noscript>								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-17cf108 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="17cf108" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://lso.ca/home">
+							<img data-lazyloaded="1" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" width="193" height="43" data-src="https://jdnpropertys.com/wp-content/uploads/2023/03/site-logo-2018.jpg" class="attachment-large size-large wp-image-832" alt="law society logo" /><noscript><img width="193" height="43" src="https://jdnpropertys.com/wp-content/uploads/2023/03/site-logo-2018.jpg" class="attachment-large size-large wp-image-832" alt="law society logo" /></noscript>								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-f895c6a elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="f895c6a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://threebestrated.ca/property-management-companies-in-london-on">
+							<img data-lazyloaded="1" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" width="173" height="62" data-src="https://jdnpropertys.com/wp-content/uploads/2023/07/ThreeBestRated.png" class="attachment-large size-large wp-image-770" alt="Logo of company Three Best Rated" /><noscript><img width="173" height="62" src="https://jdnpropertys.com/wp-content/uploads/2023/07/ThreeBestRated.png" class="attachment-large size-large wp-image-770" alt="Logo of company Three Best Rated" /></noscript>								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-ff5642c elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="ff5642c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://frpo.org/frpo-membership/members-code-of-conduct.html">
+							<img data-lazyloaded="1" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" width="800" height="480" data-src="https://jdnpropertys.com/wp-content/uploads/2023/03/FRPOlogo_tag-1024x614.jpg" class="attachment-large size-large wp-image-833" alt="Federation of Rental Housing providers logo" data-srcset="https://jdnpropertys.com/wp-content/uploads/2023/03/FRPOlogo_tag-1024x614.jpg 1024w, https://jdnpropertys.com/wp-content/uploads/2023/03/FRPOlogo_tag-300x180.jpg 300w, https://jdnpropertys.com/wp-content/uploads/2023/03/FRPOlogo_tag-768x461.jpg 768w, https://jdnpropertys.com/wp-content/uploads/2023/03/FRPOlogo_tag.jpg 1500w" data-sizes="(max-width: 800px) 100vw, 800px" /><noscript><img width="800" height="480" src="https://jdnpropertys.com/wp-content/uploads/2023/03/FRPOlogo_tag-1024x614.jpg" class="attachment-large size-large wp-image-833" alt="Federation of Rental Housing providers logo" srcset="https://jdnpropertys.com/wp-content/uploads/2023/03/FRPOlogo_tag-1024x614.jpg 1024w, https://jdnpropertys.com/wp-content/uploads/2023/03/FRPOlogo_tag-300x180.jpg 300w, https://jdnpropertys.com/wp-content/uploads/2023/03/FRPOlogo_tag-768x461.jpg 768w, https://jdnpropertys.com/wp-content/uploads/2023/03/FRPOlogo_tag.jpg 1500w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-c785d0d elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="c785d0d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://jdnpropertys.com/equal-opportunity-housing-provider/">
+							<img data-lazyloaded="1" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" width="800" height="853" data-src="https://jdnpropertys.com/wp-content/uploads/2023/03/equal-housing-logo.jpg" class="attachment-large size-large wp-image-834" alt="" data-srcset="https://jdnpropertys.com/wp-content/uploads/2023/03/equal-housing-logo.jpg 921w, https://jdnpropertys.com/wp-content/uploads/2023/03/equal-housing-logo-281x300.jpg 281w, https://jdnpropertys.com/wp-content/uploads/2023/03/equal-housing-logo-768x819.jpg 768w" data-sizes="(max-width: 800px) 100vw, 800px" /><noscript><img width="800" height="853" src="https://jdnpropertys.com/wp-content/uploads/2023/03/equal-housing-logo.jpg" class="attachment-large size-large wp-image-834" alt="" srcset="https://jdnpropertys.com/wp-content/uploads/2023/03/equal-housing-logo.jpg 921w, https://jdnpropertys.com/wp-content/uploads/2023/03/equal-housing-logo-281x300.jpg 281w, https://jdnpropertys.com/wp-content/uploads/2023/03/equal-housing-logo-768x819.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>								</a>
+															</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b459f7f elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="b459f7f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4126d86" data-id="4126d86" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c674130 elementor-nav-menu__align-center elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="c674130" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+				<ul id="menu-1-c674130" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-1431"><a rel="privacy-policy" href="https://jdnpropertys.com/privacy-policy/" class="elementor-item">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1430"><a href="https://jdnpropertys.com/vendors-about/" class="elementor-item">Vendors</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1432"><a href="https://jdnpropertys.com/realtors/" class="elementor-item">Realtor Referral Program</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1433"><a href="https://jdnpropertys.com/equal-opportunity-housing-provider/" class="elementor-item">Equal Housing Commitment</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-c674130" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-1431"><a rel="privacy-policy" href="https://jdnpropertys.com/privacy-policy/" class="elementor-item" tabindex="-1">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1430"><a href="https://jdnpropertys.com/vendors-about/" class="elementor-item" tabindex="-1">Vendors</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1432"><a href="https://jdnpropertys.com/realtors/" class="elementor-item" tabindex="-1">Realtor Referral Program</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1433"><a href="https://jdnpropertys.com/equal-opportunity-housing-provider/" class="elementor-item" tabindex="-1">Equal Housing Commitment</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-68d30a8 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="68d30a8" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6439fbe" data-id="6439fbe" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6cb76cc elementor-widget elementor-widget-text-editor" data-id="6cb76cc" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<aside id="text-2" class="fl-widget widget_text"><div class="textwidget"><p><strong>Rehaish Property Management Inc</strong></p><p>440 Cleveland Ave, London ON, N5Z 3C2</p><p><a style="color: #8bb1ec;" href="tel:+1-519-951-7226">(519) 951-7226</a></p></div></aside>								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-03ef6e1" data-id="03ef6e1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-335560b elementor-widget elementor-widget-text-editor" data-id="335560b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><strong>Logo Ownership Disclaimer:</strong></p><p>Logos featured on this site are owned and trademarked by their respective owners. Their inclusion on this website does not imply ownership or direct affiliation by Rehaish Property Management. All rights to the logos remain with their owners.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/hello-elementor\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script id="wpo_min-footer-0-js-extra">
+var localize = {"ajaxurl":"https:\/\/jdnpropertys.com\/wp-admin\/admin-ajax.php","nonce":"e1289a682f","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https:\/\/jdnpropertys.com\/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
+</script>
+<script data-optimized="1" src="https://jdnpropertys.com/wp-content/litespeed/js/8a81b29f48cbe7253893046fef02cc75.js?ver=2cc75" id="wpo_min-footer-0-js"></script>
+<script data-optimized="1" src="https://jdnpropertys.com/wp-content/litespeed/js/d27fb7168a184ed60b171f576a6332a7.js?ver=332a7" id="wpo_min-footer-1-js"></script>
+<script data-optimized="1" src="https://jdnpropertys.com/wp-content/litespeed/js/436c06f3d443a6a5452beccc15a4e826.js?ver=4e826" id="wpo_min-footer-2-js"></script>
+<script id="textmagic_widget_id" src="https://widgets.textmagic.com/messenger-widget-script.js" data-code="5b85205c-23d3-4d14-99c7-717d1fa20a5f" data-wrapper-id="textmagic-widget-wrapper" defer >
+</script>
+
+<script data-no-optimize="1">!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e():"function"==typeof define&&define.amd?define(e):(t="undefined"!=typeof globalThis?globalThis:t||self).LazyLoad=e()}(this,function(){"use strict";function e(){return(e=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n,a=arguments[e];for(n in a)Object.prototype.hasOwnProperty.call(a,n)&&(t[n]=a[n])}return t}).apply(this,arguments)}function i(t){return e({},it,t)}function o(t,e){var n,a="LazyLoad::Initialized",i=new t(e);try{n=new CustomEvent(a,{detail:{instance:i}})}catch(t){(n=document.createEvent("CustomEvent")).initCustomEvent(a,!1,!1,{instance:i})}window.dispatchEvent(n)}function l(t,e){return t.getAttribute(gt+e)}function c(t){return l(t,bt)}function s(t,e){return function(t,e,n){e=gt+e;null!==n?t.setAttribute(e,n):t.removeAttribute(e)}(t,bt,e)}function r(t){return s(t,null),0}function u(t){return null===c(t)}function d(t){return c(t)===vt}function f(t,e,n,a){t&&(void 0===a?void 0===n?t(e):t(e,n):t(e,n,a))}function _(t,e){nt?t.classList.add(e):t.className+=(t.className?" ":"")+e}function v(t,e){nt?t.classList.remove(e):t.className=t.className.replace(new RegExp("(^|\\s+)"+e+"(\\s+|$)")," ").replace(/^\s+/,"").replace(/\s+$/,"")}function g(t){return t.llTempImage}function b(t,e){!e||(e=e._observer)&&e.unobserve(t)}function p(t,e){t&&(t.loadingCount+=e)}function h(t,e){t&&(t.toLoadCount=e)}function n(t){for(var e,n=[],a=0;e=t.children[a];a+=1)"SOURCE"===e.tagName&&n.push(e);return n}function m(t,e){(t=t.parentNode)&&"PICTURE"===t.tagName&&n(t).forEach(e)}function a(t,e){n(t).forEach(e)}function E(t){return!!t[st]}function I(t){return t[st]}function y(t){return delete t[st]}function A(e,t){var n;E(e)||(n={},t.forEach(function(t){n[t]=e.getAttribute(t)}),e[st]=n)}function k(a,t){var i;E(a)&&(i=I(a),t.forEach(function(t){var e,n;e=a,(t=i[n=t])?e.setAttribute(n,t):e.removeAttribute(n)}))}function L(t,e,n){_(t,e.class_loading),s(t,ut),n&&(p(n,1),f(e.callback_loading,t,n))}function w(t,e,n){n&&t.setAttribute(e,n)}function x(t,e){w(t,ct,l(t,e.data_sizes)),w(t,rt,l(t,e.data_srcset)),w(t,ot,l(t,e.data_src))}function O(t,e,n){var a=l(t,e.data_bg_multi),i=l(t,e.data_bg_multi_hidpi);(a=at&&i?i:a)&&(t.style.backgroundImage=a,n=n,_(t=t,(e=e).class_applied),s(t,ft),n&&(e.unobserve_completed&&b(t,e),f(e.callback_applied,t,n)))}function N(t,e){!e||0<e.loadingCount||0<e.toLoadCount||f(t.callback_finish,e)}function C(t,e,n){t.addEventListener(e,n),t.llEvLisnrs[e]=n}function M(t){return!!t.llEvLisnrs}function z(t){if(M(t)){var e,n,a=t.llEvLisnrs;for(e in a){var i=a[e];n=e,i=i,t.removeEventListener(n,i)}delete t.llEvLisnrs}}function R(t,e,n){var a;delete t.llTempImage,p(n,-1),(a=n)&&--a.toLoadCount,v(t,e.class_loading),e.unobserve_completed&&b(t,n)}function T(o,r,c){var l=g(o)||o;M(l)||function(t,e,n){M(t)||(t.llEvLisnrs={});var a="VIDEO"===t.tagName?"loadeddata":"load";C(t,a,e),C(t,"error",n)}(l,function(t){var e,n,a,i;n=r,a=c,i=d(e=o),R(e,n,a),_(e,n.class_loaded),s(e,dt),f(n.callback_loaded,e,a),i||N(n,a),z(l)},function(t){var e,n,a,i;n=r,a=c,i=d(e=o),R(e,n,a),_(e,n.class_error),s(e,_t),f(n.callback_error,e,a),i||N(n,a),z(l)})}function G(t,e,n){var a,i,o,r,c;t.llTempImage=document.createElement("IMG"),T(t,e,n),E(c=t)||(c[st]={backgroundImage:c.style.backgroundImage}),o=n,r=l(a=t,(i=e).data_bg),c=l(a,i.data_bg_hidpi),(r=at&&c?c:r)&&(a.style.backgroundImage='url("'.concat(r,'")'),g(a).setAttribute(ot,r),L(a,i,o)),O(t,e,n)}function D(t,e,n){var a;T(t,e,n),a=e,e=n,(t=It[(n=t).tagName])&&(t(n,a),L(n,a,e))}function V(t,e,n){var a;a=t,(-1<yt.indexOf(a.tagName)?D:G)(t,e,n)}function F(t,e,n){var a;t.setAttribute("loading","lazy"),T(t,e,n),a=e,(e=It[(n=t).tagName])&&e(n,a),s(t,vt)}function j(t){t.removeAttribute(ot),t.removeAttribute(rt),t.removeAttribute(ct)}function P(t){m(t,function(t){k(t,Et)}),k(t,Et)}function S(t){var e;(e=At[t.tagName])?e(t):E(e=t)&&(t=I(e),e.style.backgroundImage=t.backgroundImage)}function U(t,e){var n;S(t),n=e,u(e=t)||d(e)||(v(e,n.class_entered),v(e,n.class_exited),v(e,n.class_applied),v(e,n.class_loading),v(e,n.class_loaded),v(e,n.class_error)),r(t),y(t)}function $(t,e,n,a){var i;n.cancel_on_exit&&(c(t)!==ut||"IMG"===t.tagName&&(z(t),m(i=t,function(t){j(t)}),j(i),P(t),v(t,n.class_loading),p(a,-1),r(t),f(n.callback_cancel,t,e,a)))}function q(t,e,n,a){var i,o,r=(o=t,0<=pt.indexOf(c(o)));s(t,"entered"),_(t,n.class_entered),v(t,n.class_exited),i=t,o=a,n.unobserve_entered&&b(i,o),f(n.callback_enter,t,e,a),r||V(t,n,a)}function H(t){return t.use_native&&"loading"in HTMLImageElement.prototype}function B(t,i,o){t.forEach(function(t){return(a=t).isIntersecting||0<a.intersectionRatio?q(t.target,t,i,o):(e=t.target,n=t,a=i,t=o,void(u(e)||(_(e,a.class_exited),$(e,n,a,t),f(a.callback_exit,e,n,t))));var e,n,a})}function J(e,n){var t;et&&!H(e)&&(n._observer=new IntersectionObserver(function(t){B(t,e,n)},{root:(t=e).container===document?null:t.container,rootMargin:t.thresholds||t.threshold+"px"}))}function K(t){return Array.prototype.slice.call(t)}function Q(t){return t.container.querySelectorAll(t.elements_selector)}function W(t){return c(t)===_t}function X(t,e){return e=t||Q(e),K(e).filter(u)}function Y(e,t){var n;(n=Q(e),K(n).filter(W)).forEach(function(t){v(t,e.class_error),r(t)}),t.update()}function t(t,e){var n,a,t=i(t);this._settings=t,this.loadingCount=0,J(t,this),n=t,a=this,Z&&window.addEventListener("online",function(){Y(n,a)}),this.update(e)}var Z="undefined"!=typeof window,tt=Z&&!("onscroll"in window)||"undefined"!=typeof navigator&&/(gle|ing|ro)bot|crawl|spider/i.test(navigator.userAgent),et=Z&&"IntersectionObserver"in window,nt=Z&&"classList"in document.createElement("p"),at=Z&&1<window.devicePixelRatio,it={elements_selector:".lazy",container:tt||Z?document:null,threshold:300,thresholds:null,data_src:"src",data_srcset:"srcset",data_sizes:"sizes",data_bg:"bg",data_bg_hidpi:"bg-hidpi",data_bg_multi:"bg-multi",data_bg_multi_hidpi:"bg-multi-hidpi",data_poster:"poster",class_applied:"applied",class_loading:"litespeed-loading",class_loaded:"litespeed-loaded",class_error:"error",class_entered:"entered",class_exited:"exited",unobserve_completed:!0,unobserve_entered:!1,cancel_on_exit:!0,callback_enter:null,callback_exit:null,callback_applied:null,callback_loading:null,callback_loaded:null,callback_error:null,callback_finish:null,callback_cancel:null,use_native:!1},ot="src",rt="srcset",ct="sizes",lt="poster",st="llOriginalAttrs",ut="loading",dt="loaded",ft="applied",_t="error",vt="native",gt="data-",bt="ll-status",pt=[ut,dt,ft,_t],ht=[ot],mt=[ot,lt],Et=[ot,rt,ct],It={IMG:function(t,e){m(t,function(t){A(t,Et),x(t,e)}),A(t,Et),x(t,e)},IFRAME:function(t,e){A(t,ht),w(t,ot,l(t,e.data_src))},VIDEO:function(t,e){a(t,function(t){A(t,ht),w(t,ot,l(t,e.data_src))}),A(t,mt),w(t,lt,l(t,e.data_poster)),w(t,ot,l(t,e.data_src)),t.load()}},yt=["IMG","IFRAME","VIDEO"],At={IMG:P,IFRAME:function(t){k(t,ht)},VIDEO:function(t){a(t,function(t){k(t,ht)}),k(t,mt),t.load()}},kt=["IMG","IFRAME","VIDEO"];return t.prototype={update:function(t){var e,n,a,i=this._settings,o=X(t,i);{if(h(this,o.length),!tt&&et)return H(i)?(e=i,n=this,o.forEach(function(t){-1!==kt.indexOf(t.tagName)&&F(t,e,n)}),void h(n,0)):(t=this._observer,i=o,t.disconnect(),a=t,void i.forEach(function(t){a.observe(t)}));this.loadAll(o)}},destroy:function(){this._observer&&this._observer.disconnect(),Q(this._settings).forEach(function(t){y(t)}),delete this._observer,delete this._settings,delete this.loadingCount,delete this.toLoadCount},loadAll:function(t){var e=this,n=this._settings;X(t,n).forEach(function(t){b(t,e),V(t,n,e)})},restoreAll:function(){var e=this._settings;Q(e).forEach(function(t){U(t,e)})}},t.load=function(t,e){e=i(e);V(t,e)},t.resetStatus=function(t){r(t)},Z&&function(t,e){if(e)if(e.length)for(var n,a=0;n=e[a];a+=1)o(t,n);else o(t,e)}(t,window.lazyLoadOptions),t});!function(e,t){"use strict";function a(){t.body.classList.add("litespeed_lazyloaded")}function n(){console.log("[LiteSpeed] Start Lazy Load Images"),d=new LazyLoad({elements_selector:"[data-lazyloaded]",callback_finish:a}),o=function(){d.update()},e.MutationObserver&&new MutationObserver(o).observe(t.documentElement,{childList:!0,subtree:!0,attributes:!0})}var d,o;e.addEventListener?e.addEventListener("load",n,!1):e.attachEvent("onload",n)}(window,document);</script></body>
 </html>
