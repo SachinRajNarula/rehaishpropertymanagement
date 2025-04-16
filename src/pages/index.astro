@@ -2,61 +2,76 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import '../styles/global.css';
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title="Goglab Property Management" description="Effortless Property Management Solutions" />
   </head>
   <body>
     <Header />
-    <main class="container mx-auto px-4 py-12">
-      <section class="text-center mb-16">
-        <h1 class="text-4xl font-bold mb-4">Expert Property Management You Can Rely On</h1>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-          We simplify property ownership by offering full-service solutions for homeowners and investors.
-          From tenant placement to maintenance, we handle it all so you don’t have to.
-        </p>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section style="background: url('/assets/hero-bg.jpg') center/cover no-repeat;" class="text-white py-32 text-center">
+        <div class="container">
+          <h1 class="text-5xl font-bold mb-4">Stress-Free Property Management</h1>
+          <p class="text-xl mb-8">We handle everything so you don’t have to.</p>
+          <a href="/contact" class="btn">Get Started</a>
+        </div>
       </section>
 
-      <section class="mb-16">
-        <h2 class="text-3xl font-semibold text-center mb-8">Our Services</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="p-6 border rounded-lg shadow-sm">
-            <h3 class="text-xl font-bold mb-2">Tenant Placement</h3>
-            <p class="text-gray-700">We screen and place high-quality tenants to ensure your property is in good hands.</p>
-          </div>
-          <div class="p-6 border rounded-lg shadow-sm">
-            <h3 class="text-xl font-bold mb-2">Rent Collection</h3>
-            <p class="text-gray-700">We handle rent collection efficiently and ensure timely payments to owners.</p>
-          </div>
-          <div class="p-6 border rounded-lg shadow-sm">
-            <h3 class="text-xl font-bold mb-2">Maintenance & Repairs</h3>
-            <p class="text-gray-700">24/7 maintenance support to keep your property in excellent condition year-round.</p>
-          </div>
-          <div class="p-6 border rounded-lg shadow-sm">
-            <h3 class="text-xl font-bold mb-2">Financial Reporting</h3>
-            <p class="text-gray-700">Detailed monthly statements and year-end summaries make tax season a breeze.</p>
-          </div>
-          <div class="p-6 border rounded-lg shadow-sm">
-            <h3 class="text-xl font-bold mb-2">Property Marketing</h3>
-            <p class="text-gray-700">We advertise your property on major platforms to minimize vacancy periods.</p>
-          </div>
-          <div class="p-6 border rounded-lg shadow-sm">
-            <h3 class="text-xl font-bold mb-2">Legal Compliance</h3>
-            <p class="text-gray-700">Stay compliant with local and provincial laws—we’ve got you covered.</p>
+      <!-- SERVICES SECTION -->
+      <section class="py-20 bg-white">
+        <div class="container">
+          <h2 class="section-title">Our Services</h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="card">
+              <img src="/assets/tenant-placement.png" alt="Tenant Placement" class="mb-4" />
+              <h3 class="text-xl font-semibold mb-2">Tenant Placement</h3>
+              <p>High-quality tenant screening and leasing made simple.</p>
+            </div>
+            <div class="card">
+              <img src="/assets/rent-collection.png" alt="Rent Collection" class="mb-4" />
+              <h3 class="text-xl font-semibold mb-2">Rent Collection</h3>
+              <p>On-time and reliable rent payments, every month.</p>
+            </div>
+            <div class="card">
+              <img src="/assets/maintenance.png" alt="Maintenance" class="mb-4" />
+              <h3 class="text-xl font-semibold mb-2">24/7 Maintenance</h3>
+              <p>We handle emergency repairs and regular maintenance.</p>
+            </div>
+            <div class="card">
+              <img src="/assets/reporting.png" alt="Financial Reporting" class="mb-4" />
+              <h3 class="text-xl font-semibold mb-2">Financial Reporting</h3>
+              <p>Easy-to-understand financials for peace of mind.</p>
+            </div>
+            <div class="card">
+              <img src="/assets/compliance.png" alt="Legal Compliance" class="mb-4" />
+              <h3 class="text-xl font-semibold mb-2">Legal Compliance</h3>
+              <p>We stay on top of local laws and regulations for you.</p>
+            </div>
+            <div class="card">
+              <img src="/assets/marketing.png" alt="Property Marketing" class="mb-4" />
+              <h3 class="text-xl font-semibold mb-2">Property Marketing</h3>
+              <p>Vacancy-filling listings that get your property rented fast.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="text-center bg-gray-100 py-12 px-6 rounded-lg">
-        <h2 class="text-2xl font-bold mb-4">Ready to Get Started?</h2>
-        <p class="text-gray-700 mb-6">Partner with us for stress-free property management and maximum return on your investment.</p>
-        <a href="/contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">Contact Us Today</a>
+      <!-- CTA SECTION -->
+      <section style="background: url('/assets/contact-bg.jpg') center/cover no-repeat;" class="text-white py-20 text-center">
+        <div class="container">
+          <h2 class="text-3xl font-bold mb-4">Let’s Manage Your Property The Smart Way</h2>
+          <p class="mb-6">Get in touch with us today and see how we can make your life easier.</p>
+          <a href="/contact" class="btn">Contact Us</a>
+        </div>
       </section>
     </main>
+
     <Footer />
   </body>
 </html>
