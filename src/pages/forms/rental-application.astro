@@ -108,220 +108,213 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
   <input type="hidden" name="_subject" value="Rehaish - Rental Application">
   <input type="hidden" name="_template" value="table">
 
-  <h2>Rental Details</h2>
+  <h4>Rental Details</h4>
   <div class="form-block">
-    <label>Property Address</label>
+    <label class="field-label">Property Address</label>
     <input class="text-field w-input" type="text" name="property_address" required>
   </div>
   <div class="form-block">
-    <label>Start Date</label>
+    <label class="field-label">Start Date</label>
     <input class="text-field w-input" type="text" name="start_date" placeholder="DD/MM/YYYY" required>
   </div>
   <div class="form-block">
-    <label>Monthly Rent ($)</label>
+    <label class="field-label">Monthly Rent ($)</label>
     <input class="text-field w-input" type="number" name="monthly_rent" required>
   </div>
   <div class="form-block">
-    <label>Rent Due Day Each Month</label>
+    <label class="field-label">Rent Due Day Each Month</label>
     <input class="text-field w-input" type="number" name="rent_due_day" required>
   </div>
 
-  <h2>Applicant #1</h2>
+  <h4>Applicant #1</h4>
   <div class="form-block">
-    <label>Full Name</label>
+    <label class="field-label">Full Name</label>
     <input class="text-field w-input" type="text" name="applicant1_name" required>
   </div>
   <div class="form-block">
-    <label>Date of Birth</label>
+    <label class="field-label">Date of Birth</label>
     <input class="text-field w-input" type="date" name="applicant1_dob" required>
   </div>
   <div class="form-block">
-    <label>Driver’s License No.</label>
+    <label class="field-label">Driver’s License No.</label>
     <input class="text-field w-input" type="text" name="applicant1_license">
   </div>
   <div class="form-block">
-    <label>Occupation</label>
+    <label class="field-label">Occupation</label>
     <input class="text-field w-input" type="text" name="applicant1_occupation">
   </div>
-
-  <h2>Applicant #2</h2>
+   <div class="form-block">
+    <label class="field-label">Phone #</label>
+    <input class="text-field w-input" type="text" name="phone" required>
+  </div>
   <div class="form-block">
-    <label>Full Name</label>
+    <label class="field-label">Email</label>
+    <input class="text-field w-input" type="email" name="email" required>
+  </div>
+
+  <h4>Applicant #2</h4>
+  <div class="form-block">
+    <label class="field-label">Full Name</label>
     <input class="text-field w-input" type="text" name="applicant2_name">
   </div>
   <div class="form-block">
-    <label>Date of Birth</label>
+    <label class="field-label">Date of Birth</label>
     <input class="text-field w-input" type="date" name="applicant2_dob">
   </div>
   <div class="form-block">
-    <label>Driver’s License No.</label>
+    <label class="field-label">Driver’s License No.</label>
     <input class="text-field w-input" type="text" name="applicant2_license">
   </div>
   <div class="form-block">
-    <label>Occupation</label>
+    <label class="field-label">Occupation</label>
     <input class="text-field w-input" type="text" name="applicant2_occupation">
   </div>
 
-  <h2>Other Occupants</h2>
+  <h4>Other Occupants</h4>
   <div class="form-block">
-    <label>Occupant 1 - Name / Relationship / Age</label>
+    <label class="field-label">Occupant 1 - Name / Relationship / Age</label>
     <input class="text-field w-input" type="text" name="occupant1">
   </div>
   <div class="form-block">
-    <label>Occupant 2 - Name / Relationship / Age</label>
+    <label class="field-label">Occupant 2 - Name / Relationship / Age</label>
     <input class="text-field w-input" type="text" name="occupant2">
   </div>
   <div class="form-block">
-    <label>Occupant 3 - Name / Relationship / Age</label>
+    <label class="field-label">Occupant 3 - Name / Relationship / Age</label>
     <input class="text-field w-input" type="text" name="occupant3">
   </div>
 
   <div class="form-block">
-    <label>Do you have pets? If yes, describe</label>
+    <label class="field-label">Do you have pets? If yes, describe</label>
     <input class="text-field w-input" type="text" name="pets_description">
   </div>
 
   <div class="form-block">
-    <label>Reason for vacating current residence</label>
+    <label class="field-label">Reason for vacating current residence</label>
     <input class="text-field w-input" type="text" name="reason_vacating">
   </div>
 
-  <h2>Residency History</h2>
+  <h4>Residency History</h4>
   <h3>Applicant #1</h3>
   <div class="form-block">
-    <label>Current Address</label>
+    <label class="field-label">Current Address</label>
     <input class="text-field w-input" type="text" name="applicant1_current_address">
   </div>
   <div class="form-block">
-    <label>Landlord Name / Phone</label>
+    <label class="field-label">Landlord Name / Phone</label>
     <input class="text-field w-input" type="text" name="applicant1_landlord">
   </div>
   <div class="form-block">
-    <label>Previous Address</label>
+    <label class="field-label">Previous Address</label>
     <input class="text-field w-input" type="text" name="applicant1_previous_address">
   </div>
   <div class="form-block">
-    <label>Previous Landlord Name / Phone</label>
+    <label class="field-label">Previous Landlord Name / Phone</label>
     <input class="text-field w-input" type="text" name="applicant1_previous_landlord">
   </div>
 
   <h3>Applicant #2</h3>
   <div class="form-block">
-    <label>Current Address</label>
+    <label class="field-label">Current Address</label>
     <input class="text-field w-input" type="text" name="applicant2_current_address">
   </div>
   <div class="form-block">
-    <label>Landlord Name / Phone</label>
+    <label class="field-label">Landlord Name / Phone</label>
     <input class="text-field w-input" type="text" name="applicant2_landlord">
   </div>
   <div class="form-block">
-    <label>Previous Address</label>
+    <label class="field-label">Previous Address</label>
     <input class="text-field w-input" type="text" name="applicant2_previous_address">
   </div>
   <div class="form-block">
-    <label>Previous Landlord Name / Phone</label>
+    <label class="field-label">Previous Landlord Name / Phone</label>
     <input class="text-field w-input" type="text" name="applicant2_previous_landlord">
   </div>
 
-  <h2>Employment History</h2>
+  <h4>Employment History</h4>
   <h3>Applicant #1</h3>
   <div class="form-block">
-    <label>Present Employer / Position / Phone</label>
+    <label class="field-label">Present Employer / Position / Phone</label>
     <input class="text-field w-input" type="text" name="applicant1_employer">
   </div>
   <div class="form-block">
-    <label>Length of Employment</label>
+    <label class="field-label">Length of Employment</label>
     <input class="text-field w-input" type="text" name="applicant1_employment_length">
   </div>
   <div class="form-block">
-    <label>Supervisor</label>
+    <label class="field-label">Supervisor</label>
     <input class="text-field w-input" type="text" name="applicant1_supervisor">
   </div>
   <div class="form-block">
-    <label>Monthly Income ($)</label>
+    <label class="field-label">Monthly Income ($)</label>
     <input class="text-field w-input" type="number" name="applicant1_income">
   </div>
 
   <h3>Applicant #2</h3>
   <div class="form-block">
-    <label>Present Employer / Position / Phone</label>
+    <label class="field-label">Present Employer / Position / Phone</label>
     <input class="text-field w-input" type="text" name="applicant2_employer">
   </div>
   <div class="form-block">
-    <label>Length of Employment</label>
+    <label class="field-label">Length of Employment</label>
     <input class="text-field w-input" type="text" name="applicant2_employment_length">
   </div>
   <div class="form-block">
-    <label>Supervisor</label>
+    <label class="field-label">Supervisor</label>
     <input class="text-field w-input" type="text" name="applicant2_supervisor">
   </div>
   <div class="form-block">
-    <label>Monthly Income ($)</label>
+    <label class="field-label">Monthly Income ($)</label>
     <input class="text-field w-input" type="number" name="applicant2_income">
   </div>
 
-  <h2>Banking Information</h2>
+  <h4>Banking Information</h4>
   <div class="form-block">
-    <label>Bank Name / Branch / Address</label>
+    <label class="field-label">Bank Name / Branch / Address</label>
     <input class="text-field w-input" type="text" name="bank_info">
   </div>
   <div class="form-block">
-    <label>Chequing Account #</label>
+    <label class="field-label">Chequing Account #</label>
     <input class="text-field w-input" type="text" name="bank_chequing">
   </div>
   <div class="form-block">
-    <label>Savings Account #</label>
+    <label class="field-label">Savings Account #</label>
     <input class="text-field w-input" type="text" name="bank_savings">
   </div>
 
-  <h2>Financial Obligations</h2>
+  <h4>Financial Obligations</h4>
   <div class="form-block">
-    <label>Payments To / Amount</label>
+    <label class="field-label">Payments To / Amount</label>
     <input class="text-field w-input" type="text" name="payment1">
   </div>
   <div class="form-block">
-    <label>Payments To / Amount</label>
+    <label class="field-label">Payments To / Amount</label>
     <input class="text-field w-input" type="text" name="payment2">
   </div>
 
-  <h2>References</h2>
+  <h4>References</h4>
   <div class="form-block">
-    <label>Reference 1 - Name / Phone / Address / Occupation / Years Known</label>
+    <label class="field-label">Reference 1 - Name / Phone / Address / Occupation / Years Known</label>
     <input class="text-field w-input" type="text" name="reference1">
   </div>
   <div class="form-block">
-    <label>Reference 2 - Name / Phone / Address / Occupation / Years Known</label>
+    <label class="field-label">Reference 2 - Name / Phone / Address / Occupation / Years Known</label>
     <input class="text-field w-input" type="text" name="reference2">
   </div>
 
-  <h2>Vehicle Info</h2>
+  <h4>Vehicle Info</h4>
   <div class="form-block">
-    <label>Vehicle 1 - Make / Model / Year / License Plate</label>
+    <label class="field-label">Vehicle 1 - Make / Model / Year / License Plate</label>
     <input class="text-field w-input" type="text" name="vehicle1">
   </div>
   <div class="form-block">
-    <label>Vehicle 2 - Make / Model / Year / License Plate</label>
+    <label class="field-label">Vehicle 2 - Make / Model / Year / License Plate</label>
     <input class="text-field w-input" type="text" name="vehicle2">
   </div>
 
-  <h2>Consent & Signature</h2>
+  <h4>Consent</h4>
   <p>By submitting this form, I/We consent to the collection, use, and verification of the information for tenancy purposes.</p>
-  <div class="form-block">
-    <label>Applicant #1 Signature (type your full name)</label>
-    <input class="text-field w-input" type="text" name="signature1" required>
-  </div>
-  <div class="form-block">
-    <label>Applicant #2 Signature (if applicable)</label>
-    <input class="text-field w-input" type="text" name="signature2">
-  </div>
-  <div class="form-block">
-    <label>Phone #</label>
-    <input class="text-field w-input" type="text" name="phone">
-  </div>
-  <div class="form-block">
-    <label>Email</label>
-    <input class="text-field w-input" type="email" name="email" required>
-  </div>
+ 
 
   <!-- Submit Button -->
   <input type="submit" data-wait="Please wait..." class="submit-button w-button" value="Submit Application">
