@@ -110,29 +110,29 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
   <h4>Rental Details</h4>
   <div class="form-block">
-    <label class="field-label">Property Address</label>
+    <label class="field-label">Property Address*</label>
     <input class="text-field w-input" type="text" name="property_address" required>
   </div>
   <div class="form-block">
-    <label class="field-label">Start Date</label>
-    <input class="text-field w-input" type="text" name="start_date" placeholder="DD/MM/YYYY" required>
+    <label class="field-label">Start Date*</label>
+    <input class="text-field w-input" type="date" name="start_date" required>
   </div>
   <div class="form-block">
-    <label class="field-label">Monthly Rent ($)</label>
+    <label class="field-label">Monthly Rent ($)*</label>
     <input class="text-field w-input" type="number" name="monthly_rent" required>
   </div>
   <div class="form-block">
-    <label class="field-label">Rent Due Day Each Month</label>
-    <input class="text-field w-input" type="number" name="rent_due_day" required>
+    <label class="field-label">Rent Due Day Each Month*</label>
+    <input class="text-field w-input" type="text" value="First" name="rent_due_day" required>
   </div>
 
   <h4>Applicant #1</h4>
   <div class="form-block">
-    <label class="field-label">Full Name</label>
+    <label class="field-label">Full Name*</label>
     <input class="text-field w-input" type="text" name="applicant1_name" required>
   </div>
   <div class="form-block">
-    <label class="field-label">Date of Birth</label>
+    <label class="field-label">Date of Birth*</label>
     <input class="text-field w-input" type="date" name="applicant1_dob" required>
   </div>
   <div class="form-block">
@@ -144,11 +144,11 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
     <input class="text-field w-input" type="text" name="applicant1_occupation">
   </div>
    <div class="form-block">
-    <label class="field-label">Phone #</label>
+    <label class="field-label">Phone No.*</label>
     <input class="text-field w-input" type="text" name="phone" required>
   </div>
   <div class="form-block">
-    <label class="field-label">Email</label>
+    <label class="field-label">Email*</label>
     <input class="text-field w-input" type="email" name="email" required>
   </div>
 
@@ -195,14 +195,14 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
   </div>
 
   <h4>Residency History</h4>
-  <h3>Applicant #1</h3>
+  <h5>Applicant #1</h5>
   <div class="form-block">
-    <label class="field-label">Current Address</label>
-    <input class="text-field w-input" type="text" name="applicant1_current_address">
+    <label class="field-label">Current Address*</label>
+    <input class="text-field w-input" type="text" name="applicant1_current_address" required>
   </div>
   <div class="form-block">
-    <label class="field-label">Landlord Name / Phone</label>
-    <input class="text-field w-input" type="text" name="applicant1_landlord">
+    <label class="field-label">Landlord Name / Phone*</label>
+    <input class="text-field w-input" type="text" name="applicant1_landlord" required>
   </div>
   <div class="form-block">
     <label class="field-label">Previous Address</label>
@@ -213,7 +213,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
     <input class="text-field w-input" type="text" name="applicant1_previous_landlord">
   </div>
 
-  <h3>Applicant #2</h3>
+  <h5>Applicant #2</h5>
   <div class="form-block">
     <label class="field-label">Current Address</label>
     <input class="text-field w-input" type="text" name="applicant2_current_address">
@@ -232,7 +232,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
   </div>
 
   <h4>Employment History</h4>
-  <h3>Applicant #1</h3>
+  <h5>Applicant #1</h5>
   <div class="form-block">
     <label class="field-label">Present Employer / Position / Phone</label>
     <input class="text-field w-input" type="text" name="applicant1_employer">
@@ -250,7 +250,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
     <input class="text-field w-input" type="number" name="applicant1_income">
   </div>
 
-  <h3>Applicant #2</h3>
+  <h5>Applicant #2</h5>
   <div class="form-block">
     <label class="field-label">Present Employer / Position / Phone</label>
     <input class="text-field w-input" type="text" name="applicant2_employer">
@@ -294,12 +294,12 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
   <h4>References</h4>
   <div class="form-block">
-    <label class="field-label">Reference 1 - Name / Phone / Address / Occupation / Years Known</label>
-    <input class="text-field w-input" type="text" name="reference1">
+    <label class="field-label">Reference 1* - Name / Phone / Address / Occupation / Years Known</label>
+    <input class="text-field w-input" type="text" name="reference1" required>
   </div>
   <div class="form-block">
-    <label class="field-label">Reference 2 - Name / Phone / Address / Occupation / Years Known</label>
-    <input class="text-field w-input" type="text" name="reference2">
+    <label class="field-label">Reference 2* - Name / Phone / Address / Occupation / Years Known</label>
+    <input class="text-field w-input" type="text" name="reference2" required>
   </div>
 
   <h4>Vehicle Info</h4>
@@ -312,8 +312,27 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
     <input class="text-field w-input" type="text" name="vehicle2">
   </div>
 
+  <h4>Required Documents</h4>
+ 	<div class="form-block">
+        <label for="IDs" class="field-label">Government Issued Photo IDs*</label>
+        <sublabel for="IDs" class="home-feature-listing-price-text color-grey">MAX 2MB</sublabel>
+        <input type="file" name="IDs" accept="image/*" id="IDs" required="" "enctype=multipart/form-data" multiple>
+    </div>
+
+ 	<div class="form-block">
+        <label for="proof_of_income" class="field-label">Proof of Income*</label>
+        <sublabel for="proof_of_income" class="home-feature-listing-price-text color-grey">2 most recent Paystubs/Employment Letter/ 90 Days Bank Statements, PDF format only Max 2MB</sublabel>
+        <input type="file" multiple name="proof_of_income" accept=".pdf" id="proof_of_income" required="" "enctype=multipart/form-data" multiple>
+    </div>
+ 
+ 	<div class="form-block">
+        <label for="credit-report" class="field-label">Equifax Credit Reports*</label>
+        <sublabel for="credit-report" class="home-feature-listing-price-text color-grey"><a href="https://my.equifax.ca/consumer-registration" class="link-global">Click here to get one for free</a></sublabel>
+        <input type="file" name="credit-report" accept=".pdf" id="credit-report" required="" "enctype=multipart/form-data" multiple>
+    </div>
+
   <h4>Consent</h4>
-  <p>By submitting this form, I/We consent to the collection, use, and verification of the information for tenancy purposes.</p>
+  <p>By submitting this form, I/We consent to the collection, use, and verification of the information for tenancy purposes. The Applicant consents to the collection, use and disclosure of the Applicant’s personal information by the Landlord and/or agent of the Landlord, from time to time, for the purpose of determining the creditworthiness of the Applicant for the leasing, selling or "nancing of the premises or the real property, or making such other use of the personal information as the Landlord and/or agent of the Landlord deems appropriate. The Applicant represents that all statements made above are true and correct. The Applicant is hereby noti"ed that a consumer report containing credit and/or personal information may be referred to in connection with this rental. The Applicant authorizes the veri"cation of the information contained in this application and information obtained from personal references. This application is not a Rental or Lease Agreement. In the event that this application is not accepted, any deposit submitted by the Applicant shall be returned.</p>
  
 
   <!-- Submit Button -->
